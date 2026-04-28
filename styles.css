@@ -19,8 +19,7 @@ body {
   --col-text: #000;
   --col-text-contrast: #fff;
   --dim-page-padding: 0.5in;
-  --dim-border-radius: 0.2rem;
-}
+  --dim-border-radius: 0.3rem;
 
 a,
 a:active,
