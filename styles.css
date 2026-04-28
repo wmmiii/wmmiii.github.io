@@ -10,7 +10,7 @@ body {
   background-color: #1f1e26;
   box-sizing: border-box;
   color: var(--col-text);
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Inter", sans-serif;
   font-size: 11pt;
   height: 100%;
   width: 100%;
@@ -71,7 +71,7 @@ h3 {
   font-size: 14pt;
   grid-column-end: span 2;
   line-height: 14pt;
-  margin-top: 1.2em;
+  margin: 1.2em 0 0;
 }
 
 
@@ -79,6 +79,7 @@ h4 {
   font-size: 12pt;
   line-height: 12pt;
   font-weight: 600;
+  margin: 0 0 1em;
 }
 
 header {
@@ -127,7 +128,7 @@ main>section>p {
 }
 
 p {
-  margin: 0;
+  margin: 0.8em 0;
 }
 
 svg {
@@ -158,7 +159,7 @@ svg {
   border-top-right-radius: var(--dim-border-radius);
   color: var(--col-text-contrast);
   margin-bottom: 0.4em;
-  padding: 0.4em;
+  padding: 0.4em 1em !important;
 }
 
 .buzzwords-header h2 {
@@ -176,7 +177,7 @@ svg {
 
 .contact li {
   list-style: none;
-  padding: 0.4em 0;
+  margin: 0.2em 0;
 }
 
 .dates {
@@ -184,8 +185,7 @@ svg {
   font-size: 9pt;
   font-weight: 300;
   line-height: 9pt;
-  margin-bottom: 1rem;
-  margin-top: -1rem;
+  margin-bottom: 0.8rem;
 }
 
 .grid {
@@ -282,7 +282,6 @@ svg {
 
   body,
   .page {
-    font-family: sans-serif;
     height: 100% !important;
     margin: 0 !important;
     position: relative !important;
@@ -304,17 +303,6 @@ svg {
   header::after {
     background: none;
     content: " ";
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .buzzwords {
-    color: var(--col-text);
-    font-family: 'sans-serif';
   }
 
   h2 {
