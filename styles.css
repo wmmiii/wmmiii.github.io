@@ -87,7 +87,7 @@ header {
   border-bottom-right-radius: var(--dim-border-radius);
   border-top-right-radius: var(--dim-border-radius);
   color: var(--col-text-contrast);
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
