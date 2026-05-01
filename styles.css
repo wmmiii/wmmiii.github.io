@@ -58,9 +58,7 @@ h2 {
   font-size: 18pt;
   gap: 4pt;
   line-height: 18pt;
-  margin: 1rem 0 0 0;
-  margin-top: 1rem;
-  margin-left: calc(var(--dim-page-padding) * -1);
+  margin: 1rem 0 1rem calc(var(--dim-page-padding) * -1);
   padding: 0.4em 0.6em 0.4em var(--dim-page-padding);
 }
 
@@ -71,6 +69,10 @@ h3 {
   grid-column-end: span 2;
   line-height: 14pt;
   margin: 1.2em 0 0;
+}
+
+h3:first-child {
+  margin-top: 0 !important;
 }
 
 
@@ -92,7 +94,7 @@ header {
   font-weight: 600;
   margin-left: calc(var(--dim-page-padding) * -1);
   overflow: hidden;
-  padding: 0.2in var(--dim-page-padding);
+  padding: 0.1in var(--dim-page-padding);
   position: relative;
   text-shadow: 0 0 0.2em var(--col-primary), 0 0 0.2em var(--col-primary), 0 0 0.2em var(--col-primary), 0 0 0.2em var(--col-primary);
 }
@@ -218,9 +220,7 @@ svg {
   display: none;
   font-family: 'Poppins', sans-serif;
   font-size: 8pt;
-  left: var(--dim-page-padding);
-  position: absolute;
-  top: calc(var(--dim-page-padding) * 0.5);
+  margin: 0;
   z-index: 2;
 }
 
@@ -277,6 +277,7 @@ svg {
     --col-primary: #000;
     --col-text: #000;
     --col-text-contrast: #fff;
+    --dim-page-padding: 0;
   }
 
   body,
@@ -289,6 +290,7 @@ svg {
 
   .page {
     box-shadow: none;
+    padding: 0;
   }
 
   header {
